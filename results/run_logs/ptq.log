@@ -1,0 +1,14 @@
+C:\Users\right click\Documents\Codex\2026-11-01\create-a-self-contained-offline-html-2\outputs\Edge_Assignment_3\ptq.py:4: UserWarning: Default qconfig of oneDNN backend with reduce_range of false may have accuracy issues on CPU without Vector Neural Network Instruction support.
+  setup(); x,*_=data(); m=load_float(); m.fuse(); m.qconfig=tq.get_default_qconfig('onednn')
+C:\Users\right click\Documents\Codex\2026-11-01\create-a-self-contained-offline-html-2\outputs\Edge_Assignment_3\ptq.py:5: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  tq.prepare(m,inplace=True); calibrate(m,x); tq.convert(m,inplace=True)
+C:\Users\right click\Documents\Codex\2026-10-09\ca\work\edge-env\Lib\site-packages\torch\ao\nn\quantized\modules\utils.py:78: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\quantized\Quantizer.cpp:116.)
+  qweight = torch.quantize_per_channel(
+C:\Users\right click\Documents\Codex\2026-10-09\ca\work\edge-env\Lib\site-packages\torch\jit\_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+PTQ saved; integer convolution: <class 'torch.ao.nn.intrinsic.quantized.modules.conv_relu.ConvReLU2d'>

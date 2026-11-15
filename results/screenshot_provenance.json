@@ -1,0 +1,13 @@
+{
+  "captured_at_utc": "2026-11-15T01:16:43.645Z",
+  "source_url": "https://colab.research.google.com/drive/1yNV49ay85iaR0Tjd1KzPMbaCrVzA9WcH?authuser=2",
+  "method": "Unaltered Chrome tab screenshots via screenshot API",
+  "execution": "Numerical experiments ran on Windows Intel Core i7-14700K CPU; Colab displays saved recorded outputs, not a separate cloud training run.",
+  "files": [
+    "01-overview.jpg",
+    "02-quantization.jpg",
+    "03-unstructured.jpg",
+    "04-structured.jpg",
+    "05-onnx.jpg"
+  ]
+}

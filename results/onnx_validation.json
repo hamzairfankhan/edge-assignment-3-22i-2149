@@ -1,0 +1,47 @@
+[
+  {
+    "model": "fp32",
+    "onnx_bytes": 2809170,
+    "test_count": 10000,
+    "accuracy_pct": 84.27,
+    "max_absolute_logit_difference": 9.5367431640625e-06,
+    "quantize_linear_nodes": 0,
+    "dequantize_linear_nodes": 0
+  },
+  {
+    "model": "ptq_int8",
+    "onnx_bytes": 776840,
+    "test_count": 10000,
+    "accuracy_pct": 84.28999999999999,
+    "max_absolute_logit_difference": 0.30489253997802734,
+    "quantize_linear_nodes": 32,
+    "dequantize_linear_nodes": 82
+  },
+  {
+    "model": "qat_int8",
+    "onnx_bytes": 776840,
+    "test_count": 10000,
+    "accuracy_pct": 84.43,
+    "max_absolute_logit_difference": 0.4264192581176758,
+    "quantize_linear_nodes": 32,
+    "dequantize_linear_nodes": 82
+  },
+  {
+    "model": "unstructured",
+    "onnx_bytes": 2809170,
+    "test_count": 10000,
+    "accuracy_pct": 84.13000000000001,
+    "max_absolute_logit_difference": 7.62939453125e-06,
+    "quantize_linear_nodes": 0,
+    "dequantize_linear_nodes": 0
+  },
+  {
+    "model": "structured",
+    "onnx_bytes": 1435013,
+    "test_count": 10000,
+    "accuracy_pct": 82.74000000000001,
+    "max_absolute_logit_difference": 9.5367431640625e-06,
+    "quantize_linear_nodes": 0,
+    "dequantize_linear_nodes": 0
+  }
+]

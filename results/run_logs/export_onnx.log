@@ -1,0 +1,16 @@
+C:\Users\right click\Documents\Codex\2026-10-09\ca\work\edge-env\Lib\site-packages\torch\jit\_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+C:\Users\right click\Documents\Codex\2026-11-01\create-a-self-contained-offline-html-2\outputs\Edge_Assignment_3\export_onnx.py:10: DeprecationWarning: You are using the legacy TorchScript-based ONNX export. Starting in PyTorch 2.9, the new torch.export-based ONNX exporter has become the default. Learn more about the new export logic: https://docs.pytorch.org/docs/stable/onnx_export.html. For exporting control flow: https://pytorch.org/tutorials/beginner/onnx/export_control_flow_model_to_onnx_tutorial.html
+  torch.onnx.export(model,x[:1],str(output),opset_version=17,input_names=['input'],output_names=['logits'],dynamic_axes={'input':{0:'batch'},'logits':{0:'batch'}},dynamo=False)
+C:\Users\right click\Documents\Codex\2026-10-09\ca\work\edge-env\Lib\site-packages\torch\onnx\_internal\torchscript_exporter\utils.py:1508: UserWarning: no signature found for builtin <built-in method __call__ of pybind11_builtins.pybind11_detail_function_record_v1_msvc_md_mscver19 object at 0x0000019CC206BE70>, skipping _decide_input_format
+  args = _decide_input_format(model, args)
+{'model': 'fp32', 'onnx_bytes': 2809170, 'test_count': 10000, 'accuracy_pct': 84.27, 'max_absolute_logit_difference': 9.5367431640625e-06, 'quantize_linear_nodes': 0, 'dequantize_linear_nodes': 0}
+[W1115 06:14:25.000000000 Quantizer.cpp:116] Warning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (function operator ())
+C:\Users\right click\Documents\Codex\2026-10-09\ca\work\edge-env\Lib\site-packages\torch\jit\_trace.py:1006: FutureWarning: `torch.jit.trace` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+C:\Users\right click\Documents\Codex\2026-10-09\ca\work\edge-env\Lib\site-packages\torch\jit\_trace.py:1022: UserWarning: The input to trace is already a ScriptModule, tracing it is a no-op. Returning the object as is.
+  traced_func = _trace_impl(
+{'model': 'ptq_int8', 'onnx_bytes': 776840, 'test_count': 10000, 'accuracy_pct': 84.28999999999999, 'max_absolute_logit_difference': 0.30489253997802734, 'quantize_linear_nodes': 32, 'dequantize_linear_nodes': 82}
+{'model': 'qat_int8', 'onnx_bytes': 776840, 'test_count': 10000, 'accuracy_pct': 84.43, 'max_absolute_logit_difference': 0.4264192581176758, 'quantize_linear_nodes': 32, 'dequantize_linear_nodes': 82}
+{'model': 'unstructured', 'onnx_bytes': 2809170, 'test_count': 10000, 'accuracy_pct': 84.13000000000001, 'max_absolute_logit_difference': 7.62939453125e-06, 'quantize_linear_nodes': 0, 'dequantize_linear_nodes': 0}
+{'model': 'structured', 'onnx_bytes': 1435013, 'test_count': 10000, 'accuracy_pct': 82.74000000000001, 'max_absolute_logit_difference': 9.5367431640625e-06, 'quantize_linear_nodes': 0, 'dequantize_linear_nodes': 0}

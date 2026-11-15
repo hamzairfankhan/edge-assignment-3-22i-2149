@@ -1,0 +1,4 @@
+C:\Users\right click\Documents\Codex\2026-10-09\ca\work\edge-env\Lib\site-packages\torch\jit\_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+[W1115 06:14:38.000000000 Quantizer.cpp:116] Warning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (function operator ())
+PASS: 8 checks; 13 model artifacts

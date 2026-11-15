@@ -122,3 +122,15 @@ ONNX Runtime's CPU provider.
 The instructor's November 13-14 Classroom announcements supersede the older ZIP
 instruction in the PDF: submit **this GitHub repository link and the PDF report**.
 No compressed archive is submitted.
+
+## Measured results
+
+| Model | Test accuracy | Executable MiB | Batch-1 median ms |
+|---|---:|---:|---:|
+| fp32 | 84.27% | 2.762 | 0.693 |
+| ptq_int8 | 84.24% | 0.738 | 4.883 |
+| qat_int8 | 84.52% | 0.738 | 4.882 |
+| unstructured | 84.13% | 2.770 | 0.679 |
+| structured | 82.74% | 1.466 | 0.540 |
+
+INT8 is about 3.75 times smaller here, but slower for batch-1 inference. QAT has the highest measured test accuracy; structured pruning has the lowest median latency and physically fewer parameters. At batch 256, QAT completed the test pass in 0.627 seconds versus 2.451 seconds for FP32. These are CPU measurements, not MCU or energy claims.

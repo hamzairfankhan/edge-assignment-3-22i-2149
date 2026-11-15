@@ -1,0 +1,11 @@
+[
+  {
+    "stage": "unstructured_round3",
+    "epoch": 1,
+    "train_loss": 0.06227454034354952,
+    "train_accuracy": 98.69111111111111,
+    "validation_accuracy": 85.5,
+    "validation_loss": 0.5045815902709961,
+    "seconds": 41.48945470000035
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks": [
+    "fp32: checkpoint reload, output shape, prediction counts and ONNX check passed",
+    "ptq_int8: checkpoint reload, output shape, prediction counts and ONNX check passed",
+    "qat_int8: checkpoint reload, output shape, prediction counts and ONNX check passed",
+    "unstructured: checkpoint reload, output shape, prediction counts and ONNX check passed",
+    "structured: checkpoint reload, output shape, prediction counts and ONNX check passed",
+    "48.8% permanent unstructured weight sparsity",
+    "Structured residual dimensions preserved; parameters physically reduced",
+    "PTQ and QAT contain integer convolution operators"
+  ],
+  "model_sha256": {
+    "models/fp32.onnx": "c1d380d5b77c8d9a08b641658a8d90275c26416cfaa8b0a197bf098ab7580530",
+    "models/fp32.pt": "57d1d220d2e299978d911a8c9fafe5d00c91b0a0a0b1ecd422c840becfd8f022",
+    "models/fp32.pth": "d1a8f62f9ec6180d167d7e6e24e63d19b30485e0db1912597c20de60e27ce53d",
+    "models/ptq_int8.onnx": "1c520b8b49ae938f557b714b201c5629a777c6f5124be994a0f800316eb6c60d",
+    "models/ptq_int8.pt": "9769ecfbd1966536ed60c84381d58112c15aa61460d4acff1a4f75a45e5de2a1",
+    "models/qat_int8.onnx": "dfb178826b035a8fe447f7709af3fe4b32b32dc752b27949f80819d138bf8bd4",
+    "models/qat_int8.pt": "cb96925bc4d85513e842bae9a2ce4ecb5b8948218d02298def2846b0060504a8",
+    "models/structured.onnx": "75f6b0b4c12e65bc16980490078a575f30e114880ef835c47902bcdb0f06790b",
+    "models/structured.pt": "cc650c9b8808863267472d18397fe8bf96531d4fa68fa0a1c976a29055f5bdc4",
+    "models/structured.pth": "3129c5f00bb4cc499a63fda3ebb076786c2e6551564563bd18b00d9ee92785f9",
+    "models/unstructured.onnx": "fef2f701614514576dc87dd0e2fd624479c34c60e06a8e927210535d88a9c5ee",
+    "models/unstructured.pt": "cb140ea5d2e5d1414721f8cacafa6ad936ebd292ec0704d64d5e486469e45033",
+    "models/unstructured.pth": "20f78a1bb276844cd26c655a7d1a0f4411ce67f19a5e7eda81153b888e668234"
+  }
+}

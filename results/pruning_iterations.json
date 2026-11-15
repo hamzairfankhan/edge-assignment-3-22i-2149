@@ -1,0 +1,23 @@
+[
+  {
+    "iteration": 1,
+    "weight_zeros": 139811,
+    "weight_count": 699056,
+    "sparsity": 0.19999971389988785,
+    "validation_accuracy_before_recovery": 85.52
+  },
+  {
+    "iteration": 2,
+    "weight_zeros": 251660,
+    "weight_count": 699056,
+    "sparsity": 0.3599997711199103,
+    "validation_accuracy_before_recovery": 84.56
+  },
+  {
+    "iteration": 3,
+    "weight_zeros": 341139,
+    "weight_count": 699056,
+    "sparsity": 0.4879995307958161,
+    "validation_accuracy_before_recovery": 83.94
+  }
+]

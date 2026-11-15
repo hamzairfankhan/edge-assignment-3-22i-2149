@@ -1,0 +1,7 @@
+Structured before recovery validation: 27.36
+{"stage": "structured", "epoch": 1, "train_loss": 0.38492069803873696, "train_accuracy": 86.63333333333334, "validation_accuracy": 81.48, "validation_loss": 0.5620064682006836, "seconds": 29.39562570000271}
+{"stage": "structured", "epoch": 2, "train_loss": 0.24041958768632676, "train_accuracy": 91.73777777777778, "validation_accuracy": 82.76, "validation_loss": 0.5365972305297851, "seconds": 28.927337800003443}
+{"stage": "structured", "epoch": 3, "train_loss": 0.17622626850737466, "train_accuracy": 94.31555555555556, "validation_accuracy": 83.64, "validation_loss": 0.5093693771362304, "seconds": 28.483794200001284}
+C:\Users\right click\Documents\Codex\2026-10-09\ca\work\edge-env\Lib\site-packages\torch\jit\_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Physically reconstructed parameters: 357690

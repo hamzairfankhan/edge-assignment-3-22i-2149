@@ -29,6 +29,9 @@ if __name__=='__main__':
         if name=='unstructured':
             weights=[z.weight for z in load_float(name).modules() if isinstance(z,(nn.Conv2d,nn.Linear))]
         row=dict(model=name,test_count=len(y),correct=int((p==y).sum()),accuracy_pct=accuracy,test_loss=loss,checkpoint_bytes=path.stat().st_size,parameters=params,conv_linear_weight_sparsity=sum(int((w==0).sum()) for w in weights)/sum(w.numel() for w in weights),dense_macs=complexity(reference),batch1_median_ms=float(np.median(samples)),batch1_p95_ms=float(np.percentile(samples,95)),batch256_test_seconds=test_seconds)
+        if name in ['ptq_int8','qat_int8']:
+            # Sparsity describes float pruning, not rounding-induced INT8 zeros.
+            row['conv_linear_weight_sparsity']=None
         rows.append(row); print(json.dumps(row),flush=True)
         predictions.extend(dict(model=name,test_index=i,true_label=int(y[i]),prediction=int(p[i]),correct=int(p[i]==y[i]),model_batch1_median_ms=row['batch1_median_ms'],model_batch1_p95_ms=row['batch1_p95_ms'],checkpoint_bytes=row['checkpoint_bytes']) for i in range(len(y)))
         latency_rows.extend(dict(model=name,repeat=i+1,latency_ms=v) for i,v in enumerate(samples))

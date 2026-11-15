@@ -71,7 +71,7 @@ def evaluate(model,x,y,batch=256):
     for i in range(0,len(y),batch):
         z=model(x[i:i+batch]); predictions.append(z.argmax(1)); losses.append(nn.functional.cross_entropy(z,y[i:i+batch],reduction='sum').item())
     p=torch.cat(predictions)
-    return float((p==y).float().mean()*100),sum(losses)/len(y),p
+    return 100*int((p==y).sum())/len(y),sum(losses)/len(y),p
 
 def train(model,x,y,xv,yv,epochs,lr,label,mask=None):
     opt=torch.optim.SGD(model.parameters(),lr=lr,momentum=.9,weight_decay=5e-4)

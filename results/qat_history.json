@@ -1,0 +1,29 @@
+[
+  {
+    "stage": "qat",
+    "epoch": 1,
+    "train_loss": 0.06702324999372164,
+    "train_accuracy": 98.50666666666666,
+    "validation_accuracy": 85.62,
+    "validation_loss": 0.4826501724243164,
+    "seconds": 78.95192090000273
+  },
+  {
+    "stage": "qat",
+    "epoch": 2,
+    "train_loss": 0.06107457796997494,
+    "train_accuracy": 98.67555555555556,
+    "validation_accuracy": 85.68,
+    "validation_loss": 0.48378108673095704,
+    "seconds": 78.09473259999868
+  },
+  {
+    "stage": "qat",
+    "epoch": 3,
+    "train_loss": 0.05722855072816213,
+    "train_accuracy": 98.83333333333333,
+    "validation_accuracy": 85.48,
+    "validation_loss": 0.48526153411865236,
+    "seconds": 77.86433279999983
+  }
+]

@@ -1,0 +1,9 @@
+{'iteration': 1, 'weight_zeros': 139811, 'weight_count': 699056, 'sparsity': 0.19999971389988785, 'validation_accuracy_before_recovery': 85.52}
+{"stage": "unstructured_round1", "epoch": 1, "train_loss": 0.07020531409184139, "train_accuracy": 98.3, "validation_accuracy": 85.06, "validation_loss": 0.49342237396240235, "seconds": 40.45067800000106}
+{'iteration': 2, 'weight_zeros': 251660, 'weight_count': 699056, 'sparsity': 0.3599997711199103, 'validation_accuracy_before_recovery': 84.56}
+{"stage": "unstructured_round2", "epoch": 1, "train_loss": 0.06445011600189739, "train_accuracy": 98.58, "validation_accuracy": 85.4, "validation_loss": 0.4957281784057617, "seconds": 40.977829200001}
+{'iteration': 3, 'weight_zeros': 341139, 'weight_count': 699056, 'sparsity': 0.4879995307958161, 'validation_accuracy_before_recovery': 83.94}
+{"stage": "unstructured_round3", "epoch": 1, "train_loss": 0.06227454034354952, "train_accuracy": 98.69111111111111, "validation_accuracy": 85.5, "validation_loss": 0.5045815902709961, "seconds": 41.48945470000035}
+C:\Users\right click\Documents\Codex\2026-10-09\ca\work\edge-env\Lib\site-packages\torch\jit\_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Permanent zero weights: 341139
